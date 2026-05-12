@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI Calculator</title>
+
+  <!-- ربط CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>BMI Calculator</h1>
+
+<!-- قسم العمر -->
+<label>Enter your age:</label>
+<input type="number" id="age">
+<button onclick="checkAge()">Confirm</button>
+<p id="age-warning"></p>
+
+<!-- الكالكيوليتر -->
+<div id="calculator" style="display:none">
+
+  <input type="radio" name="unit" value="metric" checked> Metric (cm, kg)
+  <input type="radio" name="unit" value="imperial"> Imperial (inch, lbs)
+  <br><br>
+
+  <label>Height:</label>
+  <input type="number" id="height">
+  <br><br>
+
+  <label>Weight:</label>
+  <input type="number" id="weight">
+  <br><br>
+
+  <button onclick="calculateBMI()">Calculate</button>
+
+  <p id="bmi-result"></p>
+  <p id="bmi-category"></p>
+  <p id="saved-result"></p>
+
+</div>
+
+<!-- ربط JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
